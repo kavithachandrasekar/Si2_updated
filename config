@@ -1,0 +1,52 @@
+================================================
+cccccccccccccccccccccccccccccccccccccccccccccccc
+================================================
+~gen_GW[
+\num_tot_state{8}       ERR:an integer > 0
+\num_occ_state{4}       ERR:an integer > 0
+\num_unocc_state{4}       ERR:an integer > 0
+\num_kpoint{1}       ERR:an integer > 0
+\num_qpt_all{off}
+\statefile_binary_opt{off}
+]
+================================================
+
+~GW_epsilon[
+\EcutFFT{12}
+\Ecuteps{10}
+\tol_iter_mtxinv{0.000001}
+]
+
+~GW_sigma[
+]
+
+
+~GW_parallel[
+\rows_per_chare{100}
+\cols_per_chare{100}
+\pipeline_stages{1}
+\transpose_stages{1}
+]
+
+~GW_io[
+\p_matrix_read{off}
+\p_matrix_read_prefix{verification_data/PMatrix}
+\p_matrix_write{off}
+\p_matrix_write_prefix{output_data/PMatrix}
+\p_matrix_verify{off}
+\p_matrix_verify_prefix{verification_data/PMatrix}
+
+\epsilon_read{off}
+\epsilon_read_prefix{verification_data/Epsilon}
+\epsilon_write{off}
+\epsilon_write_prefix{output_data/Epsilon}
+\epsilon_verify{off}
+\epsilon_verify_prefix{verification_data/Epsilon}
+
+\epsilon_inv_read{off}
+\epsilon_inv_read_prefix{verification_data/EpsilonInverse}
+\epsilon_inv_write{off}
+\epsilon_inv_write_prefix{output_data/EpsilonInverse}
+\epsilon_inv_verify{off}
+\epsilon_inv_verify_prefix{verification_data/EpsilonInverse}
+]
